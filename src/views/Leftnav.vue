@@ -8,7 +8,7 @@
         <span class="span">收银</span>
       </el-menu-item>
 
-      <el-menu-item>
+      <el-menu-item @click="push1()">
         <i class="icon iconfont icon-dianpu"></i>
         <span class="span">店铺</span>
       </el-menu-item>
@@ -42,6 +42,9 @@ export default {
   methods: {
     push() {
       this.$router.push("Leftnav2");
+    },
+    push1(){
+      this.$router.push("shop")
     }
   }
 };

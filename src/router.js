@@ -17,6 +17,10 @@ export default new Router({
         {
           path: "/Leftnav2",
           component: () => import("@/components/Leftnav2")
+        },
+        {
+          path: "/shop",
+          component: () => import("@/components/shop")
         }
       ]
     }

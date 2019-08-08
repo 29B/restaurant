@@ -116,7 +116,7 @@ export default {
       let isHave = false;
       //判断是否这个商品已经存在于订单列表
       for (let i = 0; i < this.tableData.length; i++) {
-        console.log(this.tableData[i].goodsId);
+        window.console.log(this.tableData[i].goodsId);
         if (this.tableData[i].goodsId == goods.goodsId) {
           isHave = true; //存在
         }
