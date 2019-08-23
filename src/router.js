@@ -21,6 +21,22 @@ export default new Router({
         {
           path: "/shop",
           component: () => import("@/components/shop")
+        },
+        {
+          path: "/movie",
+          component: () => import("@/components/movie")
+        },
+        {
+          path: "/vip",
+          component: () => import("@/components/vip")
+        },
+        {
+          path: "/comment",
+          component: () => import("@/components/comment")
+        },
+        {
+          path: "/tongji",
+          component: () => import("@/components/tongji")
         }
       ]
     }

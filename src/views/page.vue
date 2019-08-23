@@ -14,7 +14,7 @@ import leftnav from "./Leftnav";
 export default {
   name: "page",
   components: {
-    leftnav,
+    leftnav
   }
 };
 </script>
@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .aside1 {
   height: 800px;
-  width: 120px!important;
+  width: 80px !important;
 }
 .body {
   background-color: rgb(249, 250, 249);

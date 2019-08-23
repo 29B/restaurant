@@ -13,22 +13,22 @@
         <span class="span">店铺</span>
       </el-menu-item>
 
-      <el-menu-item>
+      <el-menu-item @click="push2()">
         <i class="icon iconfont icon-hanbao"></i>
-        <span class="span">商品</span>
+        <span class="span">电影</span>
       </el-menu-item>
 
-      <el-menu-item>
+      <el-menu-item @click="push3()">
         <i class="icon iconfont icon-huiyuanqia"></i>
         <span class="span">会员</span>
       </el-menu-item>
 
-      <el-menu-item>
+      <el-menu-item @click="push4()">
         <i class="icon iconfont icon-shijian"></i>
-        <span class="span">抢购</span>
+        <span class="span">评论</span>
       </el-menu-item>
 
-      <el-menu-item>
+      <el-menu-item @click="push5()">
         <i class="icon iconfont icon-tongji"></i>
         <span class="span">统计</span>
       </el-menu-item>·
@@ -43,8 +43,20 @@ export default {
     push() {
       this.$router.push("Leftnav2");
     },
-    push1(){
-      this.$router.push("shop")
+    push1() {
+      this.$router.push("shop");
+    },
+    push2() {
+      this.$router.push("movie");
+    },
+    push3() {
+      this.$router.push("vip");
+    },
+    push4() {
+      this.$router.push("comment");
+    },
+    push5() {
+      this.$router.push("tongji");
     }
   }
 };
@@ -62,17 +74,18 @@ export default {
 }
 .el-menu-item i {
   color: #fff;
+  padding: 0;
 }
 .left-nav .el-menu {
   padding: 0px;
   margin: 0px;
-  width: 100px;
-  height: 800px;
+  height: 760px;
   background-color: #409eff;
 }
 .left-nav .el-menu-item {
   list-style: none;
   text-align: center;
   border-bottom: 1px solid #20a0ff;
+  width: 80px;
 }
 </style>

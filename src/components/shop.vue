@@ -9,6 +9,13 @@
                 <span class="span1">小名堂老冰粉（十陵）</span>
                 <hr />
                 <span>月售89单</span>
+                <el-rate
+                  v-model="value"
+                  disabled
+                  show-score
+                  text-color="#ff9900"
+                  score-template="{value}"
+                ></el-rate>
               </td>
               <td>起送价</td>
               <td>商家配送</td>
@@ -34,22 +41,19 @@
           <el-menu-item>
             <p
               class="ex"
-            >This is an ordinary paragraph. Notice that this text is red. The default text-color for a page is defined in the body selector.This is a paragraph with class="ex". This text is blue.</p>
+            >This is an ordinary paragraph. Notice that this text is red. The default text-color for a page is defined in the body selector.This is a paragraph</p>
           </el-menu-item>
-          <el-menu-item>
-            <a style="color: #606266;">
-              <i class="icon iconfont icon-manjianyouhui" style="color:#d6204b;font-size:18px"></i> 在线支付满28减5
-            </a>
+          <el-menu-item style="color: #606266;">
+              <i class="icon iconfont icon-manjianyouhui" style="color:#d6204b;font-size:18px"></i> 
+              <span>在线支付满28减5</span>
           </el-menu-item>
-          <el-menu-item>
-            <a style="color: #606266;">
-              <i class="icon iconfont icon-tejia" style="color:#36ab60;font-size:13px"></i>单人无限精彩套餐
-            </a>
+          <el-menu-item style="color: #606266;">
+              <i class="icon iconfont icon-tejia" style="color:#36ab60;font-size:13px"></i>
+              <span>单人无限精彩套餐</span>
           </el-menu-item>
-          <el-menu-item>
-            <a style="color: #606266;">
-              <i class="icon iconfont icon-weibiaoti1" style="color:#1296db;font-size:18px"></i>酒水满10元打八折
-            </a>
+          <el-menu-item style="color: #606266;">
+              <i class="icon iconfont icon-weibiaoti1" style="color:#1296db;font-size:18px;padding:0px"></i>
+              <span>酒水满10元打八折</span>
           </el-menu-item>
           <el-menu-item>
             <a></a>
@@ -64,6 +68,7 @@
 export default {
   data() {
     return {
+      value:4.2
       //   tableData: [
       //     {
       //       price: "20元",
@@ -85,7 +90,8 @@ export default {
   margin: 0px;
 }
 
-li {
+.el-menu-item{
+  cursor: pointer;
   text-align: left;
 }
 .span1 {
