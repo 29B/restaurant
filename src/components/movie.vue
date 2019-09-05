@@ -54,7 +54,6 @@
                 <span style="float: right; color: #8492a6; font-size: 13px">{{ item.value }}</span>
               </el-option>
             </el-select>
-
           </div>
           <el-table
             :data="priceData"
@@ -66,7 +65,6 @@
             <el-table-column prop="price" label="价格" sortable width="180"></el-table-column>
             <el-table-column prop="lang" label="距离" sortable width="180"></el-table-column>
           </el-table>
-          
         </div>
       </div>
     </el-tab-pane>
@@ -134,23 +132,28 @@ export default {
           label: "广州"
         }
       ],
-      priceData: [{
-          price: '20起',
-          name: 'CGV影城',
-          lang: '1518米'
-        }, {
-          price: '45起',
-          name: '星美国际影城（1号店）',
-          lang: '1517米'
-        }, {
-          price: '18起',
-          name: '星美国际影城',
-          lang: '1519米'
-        }, {
-          price: '16起',
-          name: '太平洋影城',
-          lang: '1516米'
-        }],
+      priceData: [
+        {
+          price: "20起",
+          name: "CGV影城",
+          lang: "1518米"
+        },
+        {
+          price: "45起",
+          name: "星美国际影城（1号店）",
+          lang: "1517米"
+        },
+        {
+          price: "18起",
+          name: "星美国际影城",
+          lang: "1519米"
+        },
+        {
+          price: "16起",
+          name: "太平洋影城",
+          lang: "1516米"
+        }
+      ],
       value: ""
     };
   }
@@ -190,7 +193,7 @@ export default {
 }
 
 .image {
-  width: 100px;
+  width: 100%;
   display: block;
 }
 
@@ -208,4 +211,6 @@ export default {
   width: 7%;
   cursor: pointer;
 }
+
+
 </style>
