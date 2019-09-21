@@ -9,7 +9,6 @@
 
 <script>
 // import api from 'F:/关于前端/restaurant/src/pulgins/axios';
-
 export default {
   name: "tongji",
   data() {
